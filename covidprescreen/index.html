@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+</head>
+<body>
+
+<div class="header">
+  <h1>COVID-19 PreScreen</h1>
+  <p>A Prescreen Questionnare for the COVID-19 Infection</p>
+</div>
+
+<div class="topnav"></div>
+
+
+  <div class="maincolumn">
+    
+    
+    <div class="card" id="main">
+      <h2>Welcome to the COVID-19 Prescreener</h2>
+      
+      <div class="query">    
+        <p>This application was created to prescreen individuals for COVID-19. Prescreening logic was adapted from <a href="https://developer.infermedica.com/docs/covid-19">Infermedica</a>.
+        <br><br>This tool is provided for informational purposes only and is not a replacement for clinical diagnosis or advice from medical professionals.
+        <br>The information here is provided without any representations or warranties or accuracies, express or implied.</p> 
+        <p>If you agree to the terms above, please click on "Next" below to start the questionnare.</p>
+      </div>
+      <div class="button" id="mainbutton">Next</div>
+    </div>
+
+    <div class="card" id="symptoms">
+        <h2>Have you developed any of the following new symptoms? (Not related to any preexisting chronic conditions)</h2>        
+        <div class="query">             
+            <label for="fever"><input type="checkbox" name="fever" id="fever"> Fever</label><br><br>    
+            <label for="cough"><input type="checkbox" name="cough" id="cough"> Cough</label><br><br>            
+            <label for="shortnessOfBreath"><input type="checkbox" name="shortnessOfBreath" id="shortnessOfBreath"> Shortness of Breath </label> <br><br>
+            <label for="none"><input type="checkbox" name="none" id="none"> None of the Above </label> <br>    
+        </div>
+        <div class="button" id="symptomsbutton">Next</div>
+      </div>
+
+
+      <div class="card" id="feverCard">
+        <h2>How high is your fever?</h2>      
+        <div class="query">    
+            <label for="lowFever"><input type="radio" name="feverRadio" id="lowFever"> Between 37.5&deg;C and 40&deg;C (99.5&deg;F and 104&deg;F)</label><br><br>    
+            <label for="highFever"><input type="radio" name="feverRadio" id="highFever"> Greater than 40&deg;C (104&deg;F)</label><br>
+        </div>
+        <div class="button" id="feverButton">Next</div>
+    </div>
+
+    
+    <div class="card" id="worse">
+        <h2>Are your symptoms worsening rapidly?</h2>      
+        <div class="query">    
+            <label for="yesworse"><input type="radio" name="worseRadio" id="yesworse"> Yes</label><br><br>    
+            <label for="noworse"><input type="radio" name="worseRadio" id="noworse"> No</label><br>
+        </div>
+        <div class="button" id="worseButton">Next</div>
+    </div>
+
+    
+    <div class="card" id="breathe">
+        <h2>Are you breathing very fast?</h2>      
+        <div class="query">    
+            <label for="yesfast"><input type="radio" name="breatheRadio" id="yesfast"> Yes</label><br><br>    
+            <label for="nofast"><input type="radio" name="breatheRadio" id="nofast"> No</label><br> 
+        </div>
+        <div class="button" id="breatheButton">Next</div>
+    </div>
+
+    
+    <div class="card" id="blood">
+        <h2>Are you coughing up blood?</h2>      
+        <div class="query">    
+            <label for="yesblood"><input type="radio" name="bloodRadio" id="yesblood"> Yes</label><br><br>    
+            <label for="noblood"><input type="radio" name="bloodRadio" id="noblood"> No</label><br> 
+        </div>
+        <div class="button" id="bloodButton">Next</div>
+    </div>
+
+    
+    <div class="card" id="contact">
+        <h2>Have you had close contact with a person suspected of having COVID-19 or have you travelled to an area with widespread transmission of COVID-19 within the last 14 days?</h2>      
+        <div class="query">    
+            <label for="yescontact"><input type="radio" name="contactRadio" id="yescontact"> Yes</label><br><br>    
+            <label for="nocontact"><input type="radio" name="contactRadio" id="nocontact"> No</label><br> 
+        </div>
+        <div class="button" id="contactButton">Next</div>
+    </div>
+  </div>
+
+
+<div class="result" id="monitor">
+  <p>Based on your responses, CDC and WHO guidelines suggest that you:<br><br>Stay home and monitor your symptoms.<br><br>For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC Website</a>.</p>
+</div>
+
+<div class="result" id="avoidContact">
+    <p>Based on your responses, CDC and WHO guidelines suggest that you:<br><br>Avoid all contact and consult health department.<br><br>For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC Website</a>.</p>
+</div>
+
+<div class="result" id="quarantine">
+<p>Based on your responses, CDC and WHO guidelines suggest that you:<br><br>Quarantine<br><br>For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC Website</a>.</p>
+</div>
+
+<div class="result" id="guidelines">
+<p>Based on your responses, CDC and WHO guidelines suggest that you:<br><br>Follow preventive guidelines.<br><br>For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC Website</a>.</p>
+</div>
+
+<div class="result" id="emergency">
+    <p>Based on your responses, CDC and WHO guidelines suggest that you:<br><br>Seek medical attention as soon as possible and avoid all contact.<br><br>For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC Website</a>.</p>
+</div>
+
+<script src="screener.js"></script>
+</body>
+</html>

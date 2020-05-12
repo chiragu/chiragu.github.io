@@ -1,0 +1,31 @@
+
+    body {
+        background:url('../images/animated_background.gif'); 
+           
+    }
+
+    h1 {
+        color: white;
+        font-size: 8vw;
+        font-family: "Courier New";
+        text-align: center;
+        margin-block-start: 0.37em;
+        margin-block-end: 0.37em;
+    }
+
+    
+    p {
+        color: white;
+        font-size: 4vw;
+        font-family: "Courier New";
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .buttonContainer {
+        text-align: center;
+    }
+
+    *:focus {
+        outline: none;
+    }

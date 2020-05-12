@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <!--
+    Gredisoft Bot
+    Author: Chirag Uttamsingh
+    Date: 11/22/2018
+
+    Landing page. For now this is just a responsive button. Records audio on click for AWS voice recognition API
+
+    API returns a forward to google page based on text.
+    -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gredisoft</title>
+        <link rel = "stylesheet" type = "text/css" href = "styles/landing.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Gredisoft Bot</h1>
+        <hr><br><br><br><br>
+
+        <div id=container>
+            <div id="center">
+                <!--Button when pushed and held records audio -->
+                <div class="buttonContainer"><input type="image" id="main_button" src="images/button_green.png"></button></div>
+                <p>Push and Speak</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/bot.js"></script>
+    </body>
+</html>
+
