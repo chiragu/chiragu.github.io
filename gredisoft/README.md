@@ -4,7 +4,7 @@ A fun little web app that listens to a users voice and uses the text for a googl
 
 Works best with Google Chrome.
 
-Live at: https://chiragu.hithub.io/gredisoft
+Live at: https://chiragu.github.io/gredisoft
 
 ## Authors
 
