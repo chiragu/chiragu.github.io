@@ -21,7 +21,7 @@ input.addEventListener('keypress', function (e) {
 // process commands
 function processCommand(command){
 
-    if (command=="help") {
+    if (command.toUpperCase()=="HELP") {
 
         return `Command Summary:<br>
         <ul>
@@ -33,17 +33,17 @@ function processCommand(command){
         </ul>`;
 
     }
-    else if (command=="time") {
+    else if (command.toUpperCase()=="TIME") {
         return "Current Time: " + new Date().toLocaleTimeString();
     }
 
-    else if (command=="date") {
+    else if (command.toUpperCase()=="DATE") {
         return "Today's Date: " + new Date().toLocaleDateString();
     }
-    else if (command.replace(/ .*/, '') == "wikipedia") {
+    else if (command.toUpperCase().replace(/ .*/, '') == "WIKIPEDIA") {
         return getWiki(command.slice(9,command.length).trim().split(" ").join("_"));
     }
-    else if (command.replace(/ .*/, '') == "weather") {
+    else if (command.toUpperCase().replace(/ .*/, '') == "WEATHER") {
         return getWeather(command.slice(7,command.length).trim());
     }
     else {
