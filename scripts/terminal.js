@@ -8,7 +8,7 @@ input.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
       
       // process command 
-      let returnVal = '<p>'+processCommand(input.value.trim())+'</p>';
+      let returnVal = '<p>'+processCommand(escapeHtml(input.value.trim()))+'</p>';
       
       // set output
       output.innerHTML = returnVal;
@@ -62,6 +62,16 @@ function getWiki(query) {
 function getWeather(query) {
     return  "<iframe src=\"https://weather.com/weather/today/l/" + query + "\"style='height:500px;width:100%;'></iframe>"; 
 }
+
+// escape html for security
+function escapeHtml(unsafe) {
+    return unsafe
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
+ }
 
 
  
