@@ -60,7 +60,7 @@ function getWiki(query) {
 
 // get weather
 function getWeather(query) {
-    return  "<iframe src=\"https://weather.com/weather/today/l/" + query + "\"style='height:500px;width:100%;'></iframe>"; 
+    return  "<iframe src=\"https://www.weatherbug.com/weather-forecast/now/" + query + "\"style='height:500px;width:100%;'></iframe>"; 
 }
 
 // escape html for security

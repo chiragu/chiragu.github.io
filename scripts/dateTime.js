@@ -7,7 +7,7 @@ const timeElement = document.getElementById("time");
 // get the current date
 function getDate(date) {
 
-    return date.toLocaleDateString();
+    return date.toDateString();
 }
 
 // get the current time

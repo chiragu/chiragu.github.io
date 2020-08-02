@@ -1,0 +1,128 @@
+<!-- Depricated - Old Portfolio from 2019 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style2019.css">
+    <title>Chirag's Portfolio Terminal</title>
+</head>
+<body>
+    
+    <header>
+        <div class ="titleBar">
+            <div class = "title"><h3>chirag@software-developer:~</h3></div>
+            <span id="windowControls"><img src="images/windowControls.png" alt="Window Controls"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class ="welcome">
+            <p>Welcome to Chirag's Portfolio Terminal! (v1.0.0)<br>
+            Date: <span id="date"></span>, Time: <span id="time"></span></p>
+        </div>
+
+        <div class="content">
+
+            <!-- Projects -->
+            <p>
+                <span style="color:#499806">chirag@software-developer</span>:<span style="color:#3465a3">~</span>$ sudo apt-get web-projects<br><br>
+
+                <!-- Each project-->
+
+                <u>Gredisoft Wiki Bot</u><br>
+                An integration of the Gredisoft Bot (Webkit Speech Recognition and Synthesis) with the Wiki Bot (Wikimedia API) described below.<br>
+                Works best on Google Chrome. Push the button and speak to get a voice response from Wikipedia.<br>
+                Written in the Django Framework and stored on a Heroku dyno app server.<br>
+                <a href="https://wiki-chat-bot.herokuapp.com/"> Live Site</a>
+                <br><br>
+
+                <u>Chirag's Blog</u><br>
+                A blog application with CRUD features and user accounts.<br>
+                Written in the Django Framework and stored on a Heroku dyno app server.<br>
+                Note: Uses SQLite database. Heroku's clears SQLite databases daily, so there is no persistent storage.<br>
+                In the future, I might update it to use PostgreSQL.<br> 
+                <a href="https://chirag-django-blog.herokuapp.com/"> Live Site</a>
+                <br><br>
+
+
+                <u>Wiki Bot</u><br>
+                A chat-like application that uses the Wikipedia API to return the first couple sentences from Wikipedia. Enter any topic to get information from Wikipedia.<br>
+                This bot can be plugged into the Gredisoft Bot (see below) for a voice-based architecture.<br>
+                Written in the Django Framework and stored on a Google Cloud Compute VM Instance.<br>
+                <a href="http://104.196.187.7/wikibot/"> Live Site</a>
+                <br><br>
+
+
+                <u>COVID-19 PreScreen</u><br>
+                A Prescreen Questionnare for the COVID-19 Infection.<br>
+                This application was created to prescreen individuals for COVID-19. Prescreening logic was adapted from <a href="https://developer.infermedica.com/docs/covid-19">Infermedica</a>.<br>
+                This app is provided for informational purposes only and is not a replacement for clinical diagnosis or advice from medical professionals.<br>
+                <a href="https://github.com/chiragu/covidprescreen">Github Repo</a>, <a href="https://chiragu.github.io/covidprescreen/"> Live Site</a>
+                <br><br>
+
+                <u>Gredisoft Bot</u><br>
+                A fun little web app that listens to a users voice and uses the text for a google search. 
+                In the future these voice commands could be used for semantic web searches (say by query of DBPedia or NELL).<br>
+                Works best on Google Chrome.<br>
+                <a href="https://github.com/chiragu/gredisoft">Github Repo</a>, <a href="https://chiragu.github.io/gredisoft/"> Live Site</a>
+                <br><br>
+
+                <u>Loc News</u><br>
+                Locaion based news (currently country) using NewsAPI.<br>
+                API Key needs to be added to locnews.py<br>
+                Written in the Flask Framework with Python.<br>
+                <a href="https://github.com/chiragu/LocNews">Github Repo</a>
+                <br><br>
+
+            </p>
+            <!-- Tech Experience -->
+            <p>
+            <span style="color:#499806">chirag@software-developer</span>:<span style="color:#3465a3">~</span>$ sudo apt-get tech-experience<br><br>
+            Python, Django, Flask, html, xml, css, javascript, PHP, JSON, REST APIs, SQL, Cloud Services (AWS, Google and Azure), Apache Server<br>
+            Java (SE and EE), C, Prolog, LISP<br>
+            Linux (Ubuntu, Debian, Mint), Windows, MS Office, GIMP<br><br>
+            </p>
+
+            <!-- Education -->
+            <p>
+                <span style="color:#499806">chirag@software-developer</span>:<span style="color:#3465a3">~</span>$ sudo apt-get education<br><br>
+                Bachelors in Science, Computer Science - Cum Laude<br>
+                Graduate Level Computer Science Courses in:
+                <ul>
+                    <li>Software Engineering</li>
+                    <li>Software Testing</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Operating Systems</li>
+                    <li>Compilers</li>
+                    <li>Theoretical Computer Science</li>
+                </ul>    
+            </p>
+
+             <!-- Terminal -->
+             <p>
+                 
+                <span style="color:#499806">chirag@software-developer</span>:<span style="color:#3465a3">~</span>$ <input type="text" id="command" name="command"><br>
+                Type "help" for a list of commands.<br>
+
+                <div id="terminalOuput">
+                    <p>
+                        Command Summary:<br>
+                        <ul>
+                            <li>help : shows a list of possible commands</li>
+                            <li>time : shows your current time</li>
+                            <li>date : shows your current date</li>
+                            <li>weather *zip-code* : shows the weather for the given zip code</li>
+                            <li>wikipedia *topic* : shows information from Wikipedia on the requested topic</li>
+                        </ul>
+                    </p>
+                </div>
+            </p>
+        </div>
+    </main>
+    <script src="scripts/dateTime.js"></script>
+    <script src="scripts/windowControls.js"></script>
+    <script src="scripts/terminal.js"></script>
+</body>
+</html>

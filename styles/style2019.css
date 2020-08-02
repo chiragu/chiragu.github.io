@@ -1,0 +1,89 @@
+/*-- Depricated - Old Portfolio CSS from 2019 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    height: 100%;
+    background-color: #300a24;
+    border: 2px solid #adadad;   
+    border-radius: 8px;
+    font-family: "Lucida Console", Courier, monospace;
+    color: #f7f5e5;    
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.titleBar {
+    background-color: #2c2c2c;
+    padding: 10px;
+    margin:1px;   
+    text-align: center;
+}
+
+.titleBar  #windowControls {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.welcome {
+    padding:10px;
+
+}
+
+.content {
+    padding:10px;
+}
+
+a {
+    color: #3465A4;
+}
+
+ul {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+ul li {
+    margin-left: 40px;
+}
+
+input {
+    background-color: black;
+    color: #f7f5e5;
+    font-style: bold;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    p {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    ul {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    #windowControls {
+        display: none;
+    }
+}
+
+
