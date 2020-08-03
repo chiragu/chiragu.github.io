@@ -52,6 +52,15 @@ footer {
     background: #0e0707;
 }
 
+a {
+    color: #eaa943;
+}
+
+a:hover {
+    color: #83ea43;
+    text-decoration: none;
+}
+
 
 .my-card {
     margin-top: 50px;
