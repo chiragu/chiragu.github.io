@@ -86,11 +86,9 @@ function getQuote(outputElement) {
         // parse the JSON
         let returnedData = JSON.parse(request.responseText);
 
-        // test
-        console.log(returnedData.en + "<br>&emsp;~" + returnedData.author);
 
         // return the quote
-        outputElement.innerHTML =  returnedData.en + "<br><br> ~ " + returnedData.author;
+        outputElement.innerHTML =  returnedData.en + "<br><br> ~ " + returnedData.author + " ~";
     }
 
     // send request

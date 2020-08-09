@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="styles/stylev2.css">
+
+    <title>Chirag's Portfolio</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Chirag's Portfolio</h1>
+        <h2><span id="date"></span> &bull; <span id="time"></span></h2>
+    </header>
+
+    
+    <main>
+        <!-- Bio -->
+        <div class="card my-card">
+            <div class="card-header my-card-header">Chirag's Bio<br></div>
+            <div class="card-body my-card-body">
+                Hi, I am Chirag - a problem solver who loves to code!<br>
+                I am a full-stack developer. I have worked with technologies such as html, css, javascript, Bootstrap, Java, PHP, Python (Flask and Django), PostgreSQL and SQLite.<br>
+                I am framework/language agnostic and eager to learn and implement more!<br>
+                Please see below for a list of my recent projects.
+            </div>
+        </div>
+
+
+         <!-- Projects -->
+        <div class="card my-card">
+            <div class="card-header my-card-header">Chirag's Blog<br></div>
+            <div class="card-body my-card-body">
+                My blog application with CRUD features.<br>
+                This blog was created using Python Django. Static assets and image uploads are stored on AWS S3.<br> 
+                It uses technologies such as html, css, js, Django templating engine, bootstrap, google fonts, crispy forms, rich text ckeditor, PostgreSQL for the database, gunicorn server and is deployed on Heroku.<br>
+                Please note: Stored on a free Heroku server that goes to sleep with inactivity, so it may take a few seconds to load the first page.<br><br>
+                <button type="button" class="btn btn-success" onclick="window.location.href='https://chirag-django-blog.herokuapp.com/'">Live Site</button>
+            </div>
+        </div>
+
+        <div class="card my-card">
+            <div class="card-header my-card-header">Wikipedia Bot<br></div>
+            <div class="card-body my-card-body">
+                A chat-like application that uses the Wikipedia API to return the first couple sentences from Wikipedia.<br> 
+                Enter any topic to get information from Wikipedia.<br>
+                Written in the Python Django Framework and stored on a Google Cloud Compute VM Instance.<br><br>
+                <button type="button" class="btn btn-success" onclick="window.location.href='http://104.196.187.7/wikibot/'">Live Site</button>
+            </div>
+        </div>
+
+        <div class="card my-card">
+            <div class="card-header my-card-header">COVID-19 PreScreen<br></div>
+            <div class="card-body my-card-body">
+                This application was created to prescreen individuals for COVID-19. Prescreening logic was adapted from <a href="https://developer.infermedica.com/docs/covid-19">Infermedica</a>.<br>
+                This app is provided for informational purposes only and is not a replacement for clinical diagnosis or advice from medical professionals.<br><br>
+                <button type="button" class="btn btn-success" onclick="window.location.href='https://chiragu.github.io/covidprescreen/'">Live Site</button>&emsp;
+                <button type="button" class="btn btn-primary" onclick="window.location.href='https://github.com/chiragu/covidprescreen'">GitHub</button>
+            </div>
+        </div>
+
+        <div class="card my-card">
+            <div class="card-header my-card-header">Gredisoft Bot<br></div>
+            <div class="card-body my-card-body">
+                A fun little web app that listens to a users voice and uses the text for a google search.<br>
+                In the future these voice commands could be used for semantic web searches (say by query of DBPedia or NELL).<br>
+                Works best on Google Chrome.<br><br>
+                <button type="button" class="btn btn-success" onclick="window.location.href='https://chiragu.github.io/gredisoft/'">Live Site</button>&emsp;
+                <button type="button" class="btn btn-primary" onclick="window.location.href='https://github.com/chiragu/gredisoft'">GitHub</button>
+            </div>
+        </div>
+
+        <div class="card my-card">
+            <div class="card-header my-card-header">Gredisoft Wikipedia Bot<br></div>
+            <div class="card-body my-card-body">
+                An integration of the Gredisoft Bot (Webkit Speech Recognition and Synthesis) with the Wikipedia Bot (Wikimedia API) described below.<br>
+                Works best on Google Chrome. Push the button and speak to get a voice response from Wikipedia.<br>
+                Written in the Django Framework and stored on a Heroku dyno app server.<br>
+                Please note: Stored on a free Heroku server that goes to sleep with inactivity, so it may take a few seconds to load the first page.<br><br>
+                <button type="button" class="btn btn-success" onclick="window.location.href='https://wiki-chat-bot.herokuapp.com/'">Live Site</button>
+            </div>
+        </div>
+
+        <div class="card my-card">
+            <div class="card-header my-card-header">Loc News<br></div>
+            <div class="card-body my-card-body">
+                Locaion based news (currently country) using NewsAPI.<br>
+                API Key needs to be added to locnews.py<br>
+                Written in the Flask Framework with Python.<br><br>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='https://github.com/chiragu/LocNews'">GitHub</button>
+
+            </div>
+        </div>
+
+
+
+        <!-- Terminal -->
+        <div class="card my-card">
+            <div class="card-header terminal-card-header">chirag@software-developer:~<br></div>
+            <div class="card-body terminal-card-body">
+                <span style="color:#83ea43">chirag@software-developer</span>:<span style="color:#007bff">~</span>$ <input type="text" id="command" name="command"><br>
+                Type "help" for a list of commands.<br><br>
+
+                <div id="terminalOuput">
+                        Command Summary:<br>
+                            <ul>
+                                <li>help : shows a list of possible commands</li>
+                                <li>time : shows your current time</li>
+                                <li>date : shows your current date</li>
+                                <li>quote : shows a randomly chosen programming quote</li>
+                                <li>weather *zip-code* : shows the weather for the given zip code</li>
+                                <li>wikipedia *topic* : shows information from Wikipedia on the requested topic</li>
+                            </ul>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Random Programming Quote -->
+        <h3 id="quote"></h3><hr>
+        Copyright &#169; 2020 - Chirag's Portfolio
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="scripts/dateTime.js"></script>
+    <script src="scripts/terminal.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   </body>
+ </html>
+ 
+</body>
+</html>

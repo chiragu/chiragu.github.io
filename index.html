@@ -1,149 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chirag's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		 <!-- Bootstrap CSS -->
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Custom style sheet -->
+		<link rel="stylesheet" href="styles/style.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- Google font - Indie flower -->
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+	</head>
+	<body class="is-preload">
 
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#terminal">Terminal</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-    <!-- Custom style sheet -->
-    <link rel="stylesheet" href="styles/style.css">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <title>Chirag's Portfolio</title>
-</head>
-<body>
-    
-    <!-- Header -->
-    <header>
-        <h1>Welcome to Chirag's Portfolio</h1>
-        <h2><span id="date"></span> &bull; <span id="time"></span></h2>
-    </header>
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Hi, I am Chirag!</h1>
+							<p>Computer Scientist &bull; Software Engineer<br />
+							Problem Solver who Loves to Code</p>
+							<ul class="actions">
+								<li><a href="#projects" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
 
-    
-    <main>
-        <!-- Bio -->
-        <div class="card my-card">
-            <div class="card-header my-card-header">Chirag's Bio<br></div>
-            <div class="card-body my-card-body">
-                Hi, I am Chirag - a problem solver who loves to code!<br>
-                I am a full-stack developer. I have worked with technologies such as html, css, javascript, Bootstrap, Java, PHP, Python (Flask and Django), PostgreSQL and SQLite.<br>
-                I am framework/language agnostic and eager to learn and implement more!<br>
-                Please see below for a list of my recent projects.
-            </div>
-        </div>
+				<!-- Projects -->
+					<section id="projects" class="wrapper style2 spotlights">
 
+						<!-- Chirag's Blog -->
+						<section>
+							<a href="https://chirag-django-blog.herokuapp.com/" class="image"><img src="images/blog.png" alt="Blog" data-position="top center"/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Chirag's Blog</h2>
+									<p>This blog was created using Python Django. Static assets and image uploads are stored on AWS S3. 
+										It uses technologies such as html, css, javascript, Django templating engine, bootstrap, google fonts, crispy forms, rich text ckeditor, PostgreSQL for the database, gunicorn server and is deployed on Heroku.<br>
+										Please note: Stored on a free Heroku server that goes to sleep with inactivity, so it may take a few seconds to load the first page.<br><br></p>
+									<ul class="actions">
+										<li><a href="https://chirag-django-blog.herokuapp.com/" class="button">Live Site</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
-         <!-- Projects -->
-        <div class="card my-card">
-            <div class="card-header my-card-header">Chirag's Blog<br></div>
-            <div class="card-body my-card-body">
-                My blog application with CRUD features.<br>
-                This blog was created using Python Django. Static assets and image uploads are stored on AWS S3.<br> 
-                It uses technologies such as html, css, js, Django templating engine, bootstrap, google fonts, crispy forms, rich text ckeditor, PostgreSQL for the database, gunicorn server and is deployed on Heroku.<br>
-                Please note: Stored on a free Heroku server that goes to sleep with inactivity, so it may take a few seconds to load the first page.<br><br>
-                <button type="button" class="btn btn-success" onclick="window.location.href='https://chirag-django-blog.herokuapp.com/'">Live Site</button>
-            </div>
-        </div>
-
-        <div class="card my-card">
-            <div class="card-header my-card-header">Wikipedia Bot<br></div>
-            <div class="card-body my-card-body">
-                A chat-like application that uses the Wikipedia API to return the first couple sentences from Wikipedia.<br> 
-                Enter any topic to get information from Wikipedia.<br>
-                Written in the Python Django Framework and stored on a Google Cloud Compute VM Instance.<br><br>
-                <button type="button" class="btn btn-success" onclick="window.location.href='http://104.196.187.7/wikibot/'">Live Site</button>
-            </div>
-        </div>
-
-        <div class="card my-card">
-            <div class="card-header my-card-header">COVID-19 PreScreen<br></div>
-            <div class="card-body my-card-body">
-                This application was created to prescreen individuals for COVID-19. Prescreening logic was adapted from <a href="https://developer.infermedica.com/docs/covid-19">Infermedica</a>.<br>
-                This app is provided for informational purposes only and is not a replacement for clinical diagnosis or advice from medical professionals.<br><br>
-                <button type="button" class="btn btn-success" onclick="window.location.href='https://chiragu.github.io/covidprescreen/'">Live Site</button>&emsp;
-                <button type="button" class="btn btn-primary" onclick="window.location.href='https://github.com/chiragu/covidprescreen'">GitHub</button>
-            </div>
-        </div>
-
-        <div class="card my-card">
-            <div class="card-header my-card-header">Gredisoft Bot<br></div>
-            <div class="card-body my-card-body">
-                A fun little web app that listens to a users voice and uses the text for a google search.<br>
-                In the future these voice commands could be used for semantic web searches (say by query of DBPedia or NELL).<br>
-                Works best on Google Chrome.<br><br>
-                <button type="button" class="btn btn-success" onclick="window.location.href='https://chiragu.github.io/gredisoft/'">Live Site</button>&emsp;
-                <button type="button" class="btn btn-primary" onclick="window.location.href='https://github.com/chiragu/gredisoft'">GitHub</button>
-            </div>
-        </div>
-
-        <div class="card my-card">
-            <div class="card-header my-card-header">Gredisoft Wikipedia Bot<br></div>
-            <div class="card-body my-card-body">
-                An integration of the Gredisoft Bot (Webkit Speech Recognition and Synthesis) with the Wikipedia Bot (Wikimedia API) described below.<br>
-                Works best on Google Chrome. Push the button and speak to get a voice response from Wikipedia.<br>
-                Written in the Django Framework and stored on a Heroku dyno app server.<br>
-                Please note: Stored on a free Heroku server that goes to sleep with inactivity, so it may take a few seconds to load the first page.<br><br>
-                <button type="button" class="btn btn-success" onclick="window.location.href='https://wiki-chat-bot.herokuapp.com/'">Live Site</button>
-            </div>
-        </div>
-
-        <div class="card my-card">
-            <div class="card-header my-card-header">Loc News<br></div>
-            <div class="card-body my-card-body">
-                Locaion based news (currently country) using NewsAPI.<br>
-                API Key needs to be added to locnews.py<br>
-                Written in the Flask Framework with Python.<br><br>
-                <button type="button" class="btn btn-primary" onclick="window.location.href='https://github.com/chiragu/LocNews'">GitHub</button>
-
-            </div>
-        </div>
+						<!-- Wikipedia Bot -->
+						<section>
+							<a href="http://104.196.187.7/wikibot/" class="image"><img src="images/wikibot.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Wikipedia Bot</h2>
+									<p>A chat-like application that uses the Wikipedia API to return the first couple sentences from Wikipedia. 
+										Enter any topic to get information from Wikipedia.<br>
+										Written in the Python Django Framework and stored on a Google Cloud Compute VM Instance.<br><br></p>
+									<ul class="actions">
+										<li><a href="http://104.196.187.7/wikibot/" class="button">Live Site</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						
+						
+						<!-- COVID-19 PreScreen -->
+						<section>
+							<a href="https://chiragu.github.io/covidprescreen/" class="image"><img src="images/covidprescreen.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>COVID-19 PreScreen</h2>
+									<p>This application was created to prescreen individuals for COVID-19. Prescreening logic was adapted from <a href="https://developer.infermedica.com/docs/covid-19">Infermedica</a>.<br>
+										This app is provided for informational purposes only and is not a replacement for clinical diagnosis or advice from medical professionals.<br><br></p>
+									<ul class="actions">
+										<li><a href="https://chiragu.github.io/covidprescreen/" class="button">Live Site</a></li>
+										<li><a href="https://github.com/chiragu/covidprescreen/" class="button">GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
 
+						<!-- Gredisoft Bot -->
+						<section>
+							<a href="https://chiragu.github.io/gredisoft/" class="image"><img src="images/gredisoft.png" alt="Blog" data-position="center center"/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Gredisoft Bot</h2>
+									<p> A fun little web app that listens to a users voice and uses the text for a google search.
+										In the future these voice commands could be used for semantic web searches (say by query of DBPedia or NELL).<br>
+										Requires a browser that supports the Web Speech API, such as Google Chrome.<br><br></p>
+									<ul class="actions">
+										<li><a href="https://chiragu.github.io/gredisoft/" class="button">Live Site</a></li>
+										<li><a href="https://github.com/chiragu/gredisoft/" class="button">GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
-        <!-- Terminal -->
-        <div class="card my-card">
-            <div class="card-header terminal-card-header">chirag@software-developer:~<br></div>
-            <div class="card-body terminal-card-body">
-                <span style="color:#83ea43">chirag@software-developer</span>:<span style="color:#007bff">~</span>$ <input type="text" id="command" name="command"><br>
-                Type "help" for a list of commands.<br><br>
+						<!-- Gredisoft Wikipedia Bot -->
+						<section>
+							<a href="https://wiki-chat-bot.herokuapp.com/" class="image"><img src="images/gredisoftwiki.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Gredisoft Wikipedia Bot</h2>
+									<p> An integration of the Gredisoft Bot (Webkit Speech Recognition and Synthesis) with the Wikipedia Bot (Wikimedia API) described above.<br>
+										Push the button and speak to get a voice response from Wikipedia. Written in the Django Framework and stored on a Heroku dyno app server.<br>
+										Please note: Stored on a free Heroku server that goes to sleep with inactivity, so it may take a few seconds to load the first page.
+										Requires a browser that supports the Web Speech API, such as Google Chrome.<br><br></p>
+									<ul class="actions">
+										<li><a href="https://wiki-chat-bot.herokuapp.com/" class="button">Live Site</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						
+						
+						<!-- Loc News -->
+						<section>
+							<a href="https://github.com/chiragu/LocNews" class="image"><img src="images/newsapi.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Loc News</h2>
+									<p>Locaion based news (currently country) using NewsAPI.<br>
+										API Key needs to be added to locnews.py<br>
+										Written in the Flask Framework with Python.<br><br></p>
+									<ul class="actions">
+										<li><a href="https://github.com/chiragu/LocNews" class="button">GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
-                <div id="terminalOuput">
-                        Command Summary:<br>
-                            <ul>
-                                <li>help : shows a list of possible commands</li>
-                                <li>time : shows your current time</li>
-                                <li>date : shows your current date</li>
-                                <li>quote : shows a randomly chosen programming quote</li>
-                                <li>weather *zip-code* : shows the weather for the given zip code</li>
-                                <li>wikipedia *topic* : shows information from Wikipedia on the requested topic</li>
-                            </ul>
-                </div>
-            </div>
-    </main>
+					</section>
 
-    <!-- Footer -->
-    <footer>
-        <!-- Random Programming Quote -->
-        <h3 id="quote"></h3><hr>
-        Copyright &#169; 2020 - Chirag's Portfolio
-    </footer>
-    
-    <!-- Scripts -->
-    <script src="scripts/dateTime.js"></script>
-    <script src="scripts/terminal.js"></script>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   </body>
- </html>
- 
-</body>
+				<!-- Skills -->
+					<section id="skills" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Skills</h2>
+							<p>I have a broad range of skills in all aspects of software development. Below, I have highlighted some of them.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Front End</h3>
+									<p>I have used html, css, bootstrap, font awesome, google fonts, and javacript to build web frontends. I'm also studying CSS Preprocessors (SASS) and dabbling into React js.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Back End</h3>
+									<p>I have written backend code using PHP, Java EE, Python Django and Python Flask. I have used SQLite and PostgreSQL for databases.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Java</h3>
+									<p>I have developed multi-threaded Java desktop applications using full-stack principles for US Government contracts.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Visual Design</h3>
+									<p>I do a bit of graphics design in GNU GIMP (Similar to Photoshop) and diagrams.net. I have designed brand logos. I have also created educational YouTube videos and promotional videos using PowToon.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Deployment</h3>
+									<p>I have deployed web applications on various cloud platforms: Amazon Web Services (S3, EC2, Workspaces), Google Cloud Platform (Compute), Azure and Heroku. I have installed and deployed web applications on Apache and Nginx servers on Linux platforms.</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Education</h3>
+									<p>I have a Bachelor's in Computer Science with a minor in Psychology (GPA: 3.55) and I have completed 48 credits of graduate courses including courses in Software Engineering, Software Testing, Concurrent Systems, Artificial Intelligence and Operating Systems.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+					<!-- Terminal -->
+					<section id="terminal" class="wrapper style1 fade-up">
+						<div class="inner">
+						<div class="card">
+							<div class="card-header terminal-card-header">chirag@software-developer:~<br><span id="windowControls"><img src="images/windowControls.png" alt="Window Controls"></span></div>
+							<div class="card-body terminal-card-body">
+								<span style="color:#83ea43">chirag@software-developer</span>:<span style="color:#007bff">~</span>$ <input type="text" id="command" name="command"><br>
+								Type "help" for a list of commands.<br><br>
+				
+								<div id="terminalOuput">
+										Command Summary:
+											<ul>
+												<li>help : shows a list of possible commands</li>
+												<li>time : shows your current time</li>
+												<li>date : shows your current date</li>
+												<li>quote : shows a randomly chosen programming quote</li>
+												<li>weather *zip-code* : shows the weather for the given zip code</li>
+												<li>wikipedia *topic* : shows information from Wikipedia on the requested topic</li>
+											</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<h3 id="quote"></h3><hr>
+					<ul class="menu">
+						<li>&copy; 2020 Chirag's Portfolio. All rights reserved.</li><li>Original Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Edited by Chirag</a></li>
+					</ul>
+				</div>
+			</footer>
+
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="scripts/terminal.js"></script>
+	</body>
 </html>

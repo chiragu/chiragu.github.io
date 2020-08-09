@@ -1,0 +1,134 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background: url('../images/wood-bg.jpg');
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+header {
+    text-align: center;
+    background: #0e0707;
+    position: sticky;
+    top:0;
+    width:100%;
+    padding-top: 80px;
+    padding-left:50px;
+    padding-right:20px;
+    padding-bottom: 20px;
+    z-index: 2;
+}   
+
+header h1 {
+    font-family: 'Yesteryear', cursive;
+    color: #eaa943;
+    font-size:50px;
+
+}
+
+header h2 {
+    color: #83ea43;
+    font-size:20px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bolder;
+}
+
+h3 {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    font-size:16px;
+    color: #83ea43;
+    font-weight: normal;
+    margin-left:10%;
+    margin-right:10%;
+
+}
+
+hr {
+    background-color:  #eaa943;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main {
+   
+    margin-left:10%;
+    margin-right:10%;
+}
+
+footer {
+    font-family: 'Yesteryear', cursive;
+    text-align: center;
+    color: #eaa943;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: 20px;
+    font-size: 24px;
+    background: #0e0707;
+}
+
+a {
+    color: #eaa943;
+}
+
+a:hover {
+    color: #83ea43;
+    text-decoration: none;
+}
+
+
+.my-card {
+    margin-top: 50px;
+   
+}
+
+
+.my-card-header {
+    background: #333;
+    color: white;
+}
+
+.my-card-body {
+    background: rgba(75, 68, 66, 1);
+    color: rgba(255,255,255,0.9);
+}
+
+
+.terminal-card-header {
+    background: #333;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bolder;
+
+}
+
+.terminal-card-body {
+    background: rgba(75, 68, 66, 1);
+    color: rgba(255,255,255,0.9);
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+ul {
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding-top:20px;
+    }
+    main {
+        margin-left:2%;
+        margin-right:2%;
+    }
+}
