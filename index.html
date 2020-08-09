@@ -27,7 +27,6 @@
 
     
     <main>
-
         <!-- Bio -->
         <div class="card my-card">
             <div class="card-header my-card-header">Chirag's Bio<br></div>
@@ -111,7 +110,7 @@
         <div class="card my-card">
             <div class="card-header terminal-card-header">chirag@software-developer:~<br></div>
             <div class="card-body terminal-card-body">
-                <span style="color:#499806">chirag@software-developer</span>:<span style="color:#3465a3">~</span>$ <input type="text" id="command" name="command"><br>
+                <span style="color:#83ea43">chirag@software-developer</span>:<span style="color:#007bff">~</span>$ <input type="text" id="command" name="command"><br>
                 Type "help" for a list of commands.<br><br>
 
                 <div id="terminalOuput">
@@ -120,6 +119,7 @@
                                 <li>help : shows a list of possible commands</li>
                                 <li>time : shows your current time</li>
                                 <li>date : shows your current date</li>
+                                <li>quote : shows a randomly chosen programming quote</li>
                                 <li>weather *zip-code* : shows the weather for the given zip code</li>
                                 <li>wikipedia *topic* : shows information from Wikipedia on the requested topic</li>
                             </ul>
@@ -129,12 +129,13 @@
 
     <!-- Footer -->
     <footer>
+        <!-- Random Programming Quote -->
+        <h3 id="quote"></h3><hr>
         Copyright &#169; 2020 - Chirag's Portfolio
     </footer>
     
     <!-- Scripts -->
     <script src="scripts/dateTime.js"></script>
-    <script src="scripts/windowControls.js"></script>
     <script src="scripts/terminal.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

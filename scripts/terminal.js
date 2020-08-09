@@ -1,3 +1,7 @@
+// set quote on title
+const quoteContainer = document.getElementById("quote");
+getQuote(quoteContainer);
+
 // process and output for terminal commands
 
 const input = document.getElementById("command");
@@ -28,6 +32,7 @@ function processCommand(command){
             <li>help : shows a list of possible commands</li>
             <li>time : shows your current time</li>
             <li>date : shows your current date</li>
+            <li>quote : shows a randomly chosen programming quote</li>
             <li>weather *zip-code* : shows the weather for the given zip code</li>
             <li>wikipedia *topic* : shows information from Wikipedia on the requested topic</li>
         </ul>`;
@@ -46,6 +51,9 @@ function processCommand(command){
     else if (command.toUpperCase().replace(/ .*/, '') == "WEATHER") {
         return getWeather(command.slice(7,command.length).trim());
     }
+    else if (command.toUpperCase().replace(/ .*/, '') == "QUOTE") {
+        getQuote(output);
+    }
     else {
 
         return  "\"" + command + "\" is not recogonized as an internal or external command.<br><br>";
@@ -61,6 +69,33 @@ function getWiki(query) {
 // get weather
 function getWeather(query) {
     return  "<iframe src=\"https://www.weatherbug.com/weather-forecast/now/" + query + "\"style='height:500px;width:100%;'></iframe>"; 
+}
+
+// function to get a random quote using the programming quotes api
+function getQuote(outputElement) {
+
+    // new http request
+    let request = new XMLHttpRequest();
+ 
+    // set up request
+    request.open("GET", "https://programming-quotes-api.herokuapp.com/quotes/random");
+
+    // on return 
+    request.onload = function() {
+
+        // parse the JSON
+        let returnedData = JSON.parse(request.responseText);
+
+        // test
+        console.log(returnedData.en + "<br>&emsp;~" + returnedData.author);
+
+        // return the quote
+        outputElement.innerHTML =  returnedData.en + "<br><br> ~ " + returnedData.author;
+    }
+
+    // send request
+    request.send(); 
+
 }
 
 // escape html for security

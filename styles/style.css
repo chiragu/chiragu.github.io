@@ -11,13 +11,13 @@ body {
 header {
     text-align: center;
     background: #0e0707;
-    position: fixed;
+    position: sticky;
     top:0;
-    height: 200px;
     width:100%;
     padding-top: 80px;
-    padding-left:20px;
+    padding-left:50px;
     padding-right:20px;
+    padding-bottom: 20px;
     z-index: 2;
 }   
 
@@ -35,20 +35,39 @@ header h2 {
     font-weight: bolder;
 }
 
+h3 {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    font-size:16px;
+    color: #83ea43;
+    font-weight: normal;
+    margin-left:10%;
+    margin-right:10%;
+
+}
+
+hr {
+    background-color:  #eaa943;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 main {
-    margin-top: 250px;
+   
     margin-left:10%;
     margin-right:10%;
 }
 
 footer {
-
+    font-family: 'Yesteryear', cursive;
     text-align: center;
     color: #eaa943;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 24px;
     background: #0e0707;
 }
 
@@ -106,7 +125,7 @@ ul {
 @media screen and (max-width: 600px) {
 
     header {
-        padding-top:40px;
+        padding-top:20px;
     }
     main {
         margin-left:2%;
