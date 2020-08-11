@@ -29,7 +29,7 @@ function processCommand(command){
 
     if (command.toUpperCase()=="HELP") {
 
-        return `Command Summary:<br>
+        return `Command Summary:
         <ul>
             <li>help : shows a list of possible commands</li>
             <li>time : shows your current time</li>
