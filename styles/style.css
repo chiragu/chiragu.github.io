@@ -29,6 +29,33 @@
     top: 10px;
 }
 
+small {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+
+}
+
+.dice-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;} 
+    from {transform:rotate(180deg);}
+    to {transform:rotate(360deg);}
+ } 
+
+.dice img{
+    height:100px;
+    width:100px;
+    margin: 20px 10px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+
+}
+
 @media only screen and (max-width: 600px) {
 
     #windowControls {

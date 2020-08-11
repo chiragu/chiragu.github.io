@@ -1,3 +1,5 @@
+// Processor for terminal commands
+
 // set quote on title
 const quoteContainer = document.getElementById("quote");
 getQuote(quoteContainer);
@@ -17,8 +19,8 @@ input.addEventListener('keypress', function (e) {
       // set output
       output.innerHTML = returnVal;
 
-      // scroll to bottom
-      window.scrollTo(0,document.body.scrollHeight);
+      // scroll to top of terminal
+      window.location.href="#terminal";
     }
 });
 
@@ -104,6 +106,21 @@ function escapeHtml(unsafe) {
          .replace(/>/g, "&gt;")
          .replace(/"/g, "&quot;")
          .replace(/'/g, "&#039;");
+ }
+
+ // if window controls are clicked, return to help message
+ const windowControls = document.getElementById("windowControls");
+ windowControls.onclick = function() {
+
+     // process command - hardcoded to help
+     let returnVal = '<p>'+processCommand("help")+'</p>';
+      
+     // set output
+     output.innerHTML = returnVal;
+
+     // scroll to top of terminal
+     window.location.href="#terminal";
+
  }
 
 
