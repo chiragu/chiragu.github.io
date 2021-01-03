@@ -28,12 +28,7 @@ function submitToAPI(e) {
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
-    var data = {
-       name : name,
-       email : email,
-       message : message
-     };
-
+    var data = JSON.stringify({name: name, email: email, message: message});
 
     // Send data to REST Endpoint to Email
 
@@ -58,6 +53,7 @@ function submitToAPI(e) {
     };
 
     xhr.open('POST', URL);
+    xhr.setRequestHeader('Content-Type', 'application/json');
 
     // send request
     xhr.send(data);
