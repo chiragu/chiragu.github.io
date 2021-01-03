@@ -15,8 +15,6 @@
 		<!-- Custom style sheet -->
 		<link rel="stylesheet" href="styles/style.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!-- Google Recaptcha -->
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 		<!-- Google font - Indie flower -->
 		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
@@ -302,8 +300,7 @@
 											<div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button g-recaptcha" onClick="submitToAPI(event)" data-sitekey="6Ld9tR4aAAAAAGmxH0N1PqmCmrxxeIbJuiFQQiOm" data-callback='onSubmit' 
-												data-action='submit'>Send Message</a></li>
+											<li><a href="" class="button" onClick="submitToAPI(event)">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
@@ -341,11 +338,6 @@
 			<script src="assets/js/main.js"></script>
 			<script src="scripts/terminal.js"></script>
 			<script src="scripts/dice.js"></script>
-			<script src="scripts/emailLambdaAPI.js"></script>
-			<script>
-				function onSubmit(token) {
-				  document.getElementById("contact-form").submit();
-				}
-			</script>			 
+			<script src="scripts/emailLambdaAPI.js"></script>		 
 	</body>
 </html>
