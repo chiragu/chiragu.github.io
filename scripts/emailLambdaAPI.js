@@ -1,6 +1,6 @@
 function submitToAPI(e) {
     e.preventDefault();
-    var URL = "https://1yppsnty00.execute-api.us-east-1.amazonaws.com/Prod";
+    var URL = "https://1yppsnty00.execute-api.us-east-1.amazonaws.com/Prod/contact-us";
 
          var Namere = /[A-Za-z]{1}[A-Za-z]/;
          if (!Namere.test($("#name").val())) {
@@ -29,7 +29,7 @@ function submitToAPI(e) {
 
     $.ajax({
       type: "POST",
-      url : "https://1yppsnty00.execute-api.us-east-1.amazonaws.com/Prod",
+      url : "https://1yppsnty00.execute-api.us-east-1.amazonaws.com/Prod/contact-us",
       dataType: "json",
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
@@ -38,13 +38,13 @@ function submitToAPI(e) {
       
       success: function () {
         // clear form and show a success message
-        alert("Your message has been sent. Thank you.");
+        alert("Your message has been sent. Thank you!");
         document.getElementById("contact-form").reset();
     location.reload();
       },
       error: function (xhr, status, error) {
         // show an error message
         var errorMessage = xhr.status + ': ' + xhr.statusText;
-        alert("Error: Email Sending Failed.\nError Code: " + errorMessage);
+        alert("Email Sending Failed\nError Code: " + errorMessage);
       }});
   }
