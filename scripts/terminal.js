@@ -34,7 +34,6 @@ function processCommand(command){
             <li>help : shows a list of possible commands</li>
             <li>time : shows your current time</li>
             <li>date : shows your current date</li>
-            <li>quote : shows a randomly chosen programming quote</li>
             <li>weather *zip-code* : shows the weather for the given zip code</li>
             <li>wikipedia *topic* : shows information from Wikipedia on the requested topic</li>
         </ul>`;

@@ -15,6 +15,8 @@
 		<!-- Custom style sheet -->
 		<link rel="stylesheet" href="styles/style.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Custom scripts -->
+		<script src="scripts/emailLambdaAPI.js"></script>
 
 		<!-- Google font - Indie flower -->
 		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
@@ -31,6 +33,7 @@
 							<li><a href="#skills">Skills</a></li>
 							<li><a href="#dice">Invention Dice</a></li>
 							<li><a href="#terminal">Terminal</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -44,11 +47,10 @@
 						<div class="inner">
 							<h1>Hi, I am Chirag!</h1>
 							<p>Computer Scientist &bull; Software Engineer <br> 
-								<a href="https://www.gredisoft.com">Gredisoft Founder</a><br />
-							Problem Solver who Loves to Code</p>
+								<a href="https://www.gredisoft.com">Gredisoft Founder</a></p>
 							<ul class="actions">
 								<li><a href="#projects" class="button scrolly">Learn more</a></li>
-								<li><a href="https://www.gredisoft.com/contact/" class="button scrolly">Contact Me</a></li>
+								<li><a href="#contact" class="button scrolly">Contact Me</a></li>
 							</ul>
 						</div>
 					</section>
@@ -62,7 +64,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Gredisoft</h2>
-									<p>Founder of Gredisoft LLC. We build software solutions (themes and plugins) for WordPress.<br><br></p>
+									<p>Founder of Gredisoft LLC. We build plugins for WordPress.<br><br></p>
 									<ul class="actions">
 										<li><a href="https://www.gredisoft.com/" class="button">Live Site</a></li>
 									</ul>
@@ -201,7 +203,7 @@
 								<section>
 									<span class="icon solid major fa-code"></span>
 									<h3>Front End</h3>
-									<p>I use html, css, sass, bootstrap, font awesome, google fonts, AOS, animate.css and javascript to build web frontends. I build custom WordPress themes and plugins.</p>
+									<p>I use html, css, sass, bootstrap, font awesome, google fonts, AOS, animate.css and javascript to build web frontends. I build custom WordPress themes and plugins. I also have experience with serverless compute using AWS Lambda.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-code"></span>
@@ -221,12 +223,12 @@
 								<section>
 									<span class="icon solid major fa-cog"></span>
 									<h3>DevOps</h3>
-									<p>I have deployed web applications on various cloud platforms: Amazon Web Services (S3, EC2, Workspaces), Google Cloud Platform (Compute), Azure, Heroku, Hostinger and Dreamhost. I have installed and deployed web applications on Apache and Nginx servers on Linux platforms and have experience with cPanel, phpMyAdmin, CloudFare, domain setup and SSL.</p>
+									<p>I have experience deploying web applications on various cloud platforms: Amazon Web Services (S3, EC2, Lambda, AppStream), Google Cloud Platform (Compute), Azure, Heroku, Hostinger and Dreamhost. I have installed and deployed web applications on Apache and Nginx servers on Linux platforms and have experience with cPanel, phpMyAdmin, CloudFare, domain setup and SSL.</p>
 								</section>
 								<section>
 									<span class="icon major fa-gem"></span>
 									<h3>Education</h3>
-									<p>I have a Bachelor's in Computer Science (GPA: 3.55) and I completed 48 credits of graduate courses including courses in Software Engineering, Software Testing, Concurrent Systems, Artificial Intelligence and Operating Systems. I co-authored 5 academic papers including papers in prestegious journals like the AAAI. I have been a guest editor for the Computing in Science and Engineering journal and a member of the ACM.</p>
+									<p>I have a Bachelor's in Computer Science (GPA: 3.55) and I completed 48 credits of graduate courses including courses in Software Engineering, Artificial Intelligence and CS Theory. I co-authored 5 academic papers including papers in prestegious journals like the AAAI. I have been a guest editor for the Computing in Science and Engineering journal and a member of the ACM.</p>
 								</section>
 							</div>
 						</div>
@@ -267,7 +269,6 @@
 												<li>help : shows a list of possible commands</li>
 												<li>time : shows your current time</li>
 												<li>date : shows your current date</li>
-												<li>quote : shows a randomly chosen programming quote</li>
 												<li>weather *zip-code* : shows the weather for the given zip code</li>
 												<li>wikipedia *topic* : shows information from Wikipedia on the requested topic</li>
 											</ul>
@@ -276,6 +277,40 @@
 						</div>
 					   </div>
 					</section>
+
+					<!-- Contact -->
+					<section id="contact" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Send me a message and I will get back to you as soon as I can.<br>This form is powered by AWS Lambda!</p>
+							<div class="style1">
+								<section>
+									<form method="post">
+										<div class="fields">
+											<div class="field full">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field full">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+											<div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button" onClick="submitToAPI(event)" >Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+							</div>
+						</div>
+					</section>
+
+
 
 			</div>
 
