@@ -39,31 +39,27 @@ function submitToAPI(e) {
 
     // configure a request
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', URL);
 
-    // set headers
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+             // clear form and show a success message
+            console.log(xhr.responseText);
+            alert("Your message has been sent. Thank you!");
+            document.getElementById("contact-form").reset();
+            location.reload();
+        }
+
+        else  if (this.readyState == 4 && this.status != 200) {
+             // show an error message
+            var errorMessage = this.status + ': ' + this.statusText;
+            alert("Email Sending Failed\nError Code: " + errorMessage);
+
+        }
+    };
+
+    xhr.open('POST', URL);
 
     // send request
     xhr.send(data);
-
-    // listen for `load` event
-    xhr.onload = () => {
-        
-        // clear form and show a success message
-        console.log(xhr.responseText);
-        alert("Your message has been sent. Thank you!");
-        document.getElementById("contact-form").reset();
-        location.reload();
-    }
-
-    // listen for `error` event
-    xhr.onerror = () => {
-        
-         // show an error message
-         var errorMessage = xhr.status + ': ' + xhr.statusText;
-         alert("Email Sending Failed\nError Code: " + errorMessage);
-    }
 
   }
