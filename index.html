@@ -16,8 +16,10 @@
 		<link rel="stylesheet" href="styles/style.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Google font - Indie flower -->
+		<!-- Google fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    	<link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet"> 
+
 	</head>
 	<body class="is-preload">
 
@@ -41,7 +43,7 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<section id="intro" class="wrapper style1 fullscreen fade-down">
 						<div class="inner">
 							<h1>Hi, I am Chirag!</h1>
 							<p>Computer Scientist &bull; Software Engineer <br> 
@@ -112,7 +114,7 @@
 									<h2>Wikipedia Bot</h2>
 									<p>A chat-like application that uses the Wikipedia API to return the first couple sentences from Wikipedia. 
 										Enter any topic to get information from Wikipedia.<br>
-										Written in the Python Django Framework and stored on a Google Cloud Compute VM Instance.<br><br></p>
+										Written in the Python Django Framework and stored on a Google Cloud Compute VM Instance. This app can also be seen running on this page on the bottom right.<br></p>
 									<ul class="actions">
 										<li><a href="http://104.196.187.7/wikibot/" class="button">Live Site</a></li>
 									</ul>
@@ -307,16 +309,36 @@
 						</div>
 					</section>
 
+					<!-- Chat -->
+					<section id="chat">
+						<button class="open-button" onclick="openForm()"></button>
+						<div class="form-popup" id="myForm">
 
+							<div class="form-container chat-body">
+								<span class="close" onclick="closeForm()">×</span>
+								<!-- Header -->
+								<div class="chat-header">Wikipedia Bot</div>
 
+								<!-- Chat display -->
+								<div id ="chat-display"></div>
+
+								<!-- Input section -->
+								<div class = "chat-inputContainer"> 
+									<input type="text" id="chat-text" name="text" placeholder="Enter a topic...">
+								</div>						
+								<button type="submit" onclick="sendBotText()" class="btn">Send</button>
+								<div class="chat-footer">Powered by the Wikipedia API, Python Django and Google Cloud Compute</div>			
+							</div>
+						</div>
+					</section>
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
-					<h3 id="quote"></h3><hr>
+					<!-- <h3 id="quote"></h3><hr> -->
 					<ul class="menu">
-						<li>&copy; 2020 Chirag's Portfolio. All rights reserved.</li><li>Original Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Edited by Chirag</a></li>
+						<li>&copy; 2021 Chirag's Portfolio. All rights reserved.</li><li>Original Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Edited by Chirag</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -337,6 +359,8 @@
 			<script src="assets/js/main.js"></script>
 			<script src="scripts/terminal.js"></script>
 			<script src="scripts/dice.js"></script>
-			<script src="scripts/emailLambdaAPI.js"></script>		 
+			<script src="scripts/emailLambdaAPI.js"></script>
+			<script src="scripts/chat.js"></script>	
+			<script src="scripts/wiki.js"></script>		 
 	</body>
 </html>
