@@ -1,8 +1,8 @@
 // Processor for terminal commands
 
 // set quote on title
-const quoteContainer = document.getElementById("quote");
-getQuote(quoteContainer);
+// const quoteContainer = document.getElementById("quote");
+// getQuote(quoteContainer);
 
 // process and output for terminal commands
 

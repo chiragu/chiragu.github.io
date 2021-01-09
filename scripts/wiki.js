@@ -62,7 +62,7 @@ function getBotResponse(userText) {
         }
     };
 
-    xmlhttp.open("GET", "http://104.196.187.7/wikibot/wiki/?query=" + userText, true);
+    xmlhttp.open("GET", "https://cugnzxrxyl.execute-api.us-east-1.amazonaws.com/prod/wikibot?query=" + userText, true);
     xmlhttp.send();
 
     // scroll to bottom
