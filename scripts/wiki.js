@@ -62,7 +62,7 @@ function getBotResponse(userText) {
         }
     };
 
-    xmlhttp.open("GET", "https://chiragu.ml/wikibot/wiki?query=" + userText, true);
+    xmlhttp.open("GET", "http://104.196.187.7/wikibot/wiki?query=" + userText, true);
     xmlhttp.send();
 
     // scroll to bottom
