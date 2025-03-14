@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./gredisoft/static/css/main.4b0f1065.css",
-    "main.js": "./gredisoft/static/js/main.ea454fb9.js",
-    "static/media/earth.jpg": "./gredisoft/static/media/earth.738c4e13ce9cf3b0996e.jpg",
-    "static/media/moon.jpg": "./gredisoft/static/media/moon.c0987aa0f93b8b7cc49f.jpg",
-    "static/media/wood-bg.jpg": "./gredisoft/static/media/wood-bg.8cc4e83958492d62bbe7.jpg",
-    "static/media/gredisoft_logo.png": "./gredisoft/static/media/gredisoft_logo.b283cabad4c157fd8b3d.png",
-    "index.html": "./gredisoft/index.html",
-    "main.4b0f1065.css.map": "./gredisoft/static/css/main.4b0f1065.css.map",
-    "main.ea454fb9.js.map": "./gredisoft/static/js/main.ea454fb9.js.map"
+    "main.css": "/gredisoft/static/css/main.98c7f140.css",
+    "main.js": "/gredisoft/static/js/main.6630a3d4.js",
+    "static/media/earth.jpg": "/gredisoft/static/media/earth.738c4e13ce9cf3b0996e.jpg",
+    "static/media/moon.jpg": "/gredisoft/static/media/moon.c0987aa0f93b8b7cc49f.jpg",
+    "static/media/wood-bg.jpg": "/gredisoft/static/media/wood-bg.8cc4e83958492d62bbe7.jpg",
+    "static/media/gredisoft_logo.png": "/gredisoft/static/media/gredisoft_logo.b283cabad4c157fd8b3d.png",
+    "index.html": "/gredisoft/index.html",
+    "main.98c7f140.css.map": "/gredisoft/static/css/main.98c7f140.css.map",
+    "main.6630a3d4.js.map": "/gredisoft/static/js/main.6630a3d4.js.map"
   },
   "entrypoints": [
-    "gredisoft/static/css/main.4b0f1065.css",
-    "gredisoft/static/js/main.ea454fb9.js"
+    "static/css/main.98c7f140.css",
+    "static/js/main.6630a3d4.js"
   ]
 }
