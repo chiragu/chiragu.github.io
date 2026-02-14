@@ -1,9 +1,7 @@
-# GitHub Site
+# [CJ's Portfolio] 🚀
 
-My portfolio website. 
+> The source code for my personal portfolio hosted at [https://cjsingh.dev](https://cjsingh.dev)
 
-I also store static web projects here.
+This repository contains the files for my personal website. I built this to showcase my projects.
 
-## Authors
 
-* **Chirag U**
